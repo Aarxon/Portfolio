@@ -1,33 +1,111 @@
-main {
+main 
+{
   max-width: 1100px;
   margin: 0 auto;
   padding: 100px 32px;
 }
 
-header {
+header 
+{
   width: 100%;
   padding: 24px 32px;
   background-color: #080808;
   border-bottom: 1px solid #333;
 }
 
-nav {
+nav 
+{
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav a {
+nav a 
+{
   color: #f5f5f5;
   text-decoration: none;
 }
 
 
-.nav-links {
+.nav-links 
+{
   display: flex;
   gap: 32px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover 
+{
   color: #a3a3a3;
 }
+
+h1 
+{
+  font-size: 64px;
+}
+
+#projects
+{
+  margin-top: 10px;
+  border-bottom: 1px solid #333;
+}
+
+#contact
+{
+  margin-top: 10px;
+  border-bottom: 1px solid #333;
+}
+
+#about
+{
+  margin-top: 10px;
+  border-bottom: 1px solid #333;
+}
+
+/* Project Card Styling */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin: 0 0 8px;
+}
+
+.project-info p {
+  margin: 0;
+  color: #a3a3a3;
+}
+
+/* Project Card Styling */
+
+
+/* Mobile Styling */
+
+@media (max-width: 700px) 
+{
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Styling */

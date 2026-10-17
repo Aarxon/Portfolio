@@ -1,4 +1,5 @@
 import './App.css'
+import ProjectCard from './ProjectCard'
 
 function App() 
 {
@@ -16,7 +17,34 @@ function App()
       </header>
 
       <main>
-        
+        <h1>Aaron Tierney</h1>
+
+        <section id = "about"> 
+        <h2>About me</h2>
+        <p>
+          I'm a software development student based in Ireland with a passion for technology, problem-solving, and building practical applications.
+          I enjoy exploring new technologies, working on personal projects, and continuously improving my skills as a developer.
+          I'm currently seeking opportunities to gain industry experience and further develop my skills in software engineering.
+        </p>
+        </section>
+
+        <section id = "projects"> 
+        <h2>Projects</h2>
+        <div className="projects-grid">
+          <ProjectCard
+            title="GG-Fitness"
+            description="A desktop application that helps manage gym operations."
+            image="/projects/gg.png"
+          />
+
+        </div>
+        </section>
+
+        <section id = "contact"> 
+        <h2>Contact me</h2>
+        </section>
+
+          
       </main>
     </>
   )
