@@ -2,14 +2,17 @@ import { useState } from 'react'
 import ProjectModal from './ProjectModal'
 
 
-type ProjectCardProps = {
+type ProjectCardProps =
+{
   title: string
   description: string
+  details: string
+  build: string
   image: string
   modalImage: string
 }
 
-function ProjectCard({ title, description, image, modalImage}: ProjectCardProps) 
+function ProjectCard({ title, description, details, image, build, modalImage }: ProjectCardProps)
 {
   const [isOpen, setIsOpen] = useState(false)
   
@@ -31,11 +34,12 @@ function ProjectCard({ title, description, image, modalImage}: ProjectCardProps)
 
   {isOpen && (
   <ProjectModal
-    title={title}
-    description={description}
-    image={image}
-    modalImage={modalImage}
-    onClose={() => setIsOpen(false)}
+  title={title}
+  description={description}
+  modalImage={modalImage}
+  details={details}
+  build={build}
+  onClose={() => setIsOpen(false)}
   />
 )}
 

@@ -1,15 +1,17 @@
 type ProjectModalProps =
 {
   title: string
-  image: string
-  modalImage: string
   description: string
+  modalImage: string
+  details: string
+  build: string
   onClose: () => void
 }
 
-function ProjectModal({ title, image, modalImage, description, onClose }: ProjectModalProps)
+function ProjectModal({ title, details, modalImage, description, build, onClose }: ProjectModalProps)
 {
   return (
+    
     <div className="modal-overlay" onClick={onClose}>
       <div
         className="modal-content"
@@ -24,18 +26,18 @@ function ProjectModal({ title, image, modalImage, description, onClose }: Projec
         <p>{description}</p>
         <img src={modalImage} alt={title} />
 
+        <div className ="info"
+        </div>
         <div className="modal-details">
             <div className="modal-about">
             <h3>About this project</h3>
-            <p>
-            This section will explain what the project does,
-            why I built it, and the main features I implemented.
-            </p>
+            <p>{details}</p>
+            
         </div>
 
         <div className="modal-technologies">
             <h3>Built with</h3>
-            <p>Java, JavaFX, SQL</p>
+            <p>{build}</p>
         </div>
     </div>
 

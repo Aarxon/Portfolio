@@ -36,6 +36,8 @@ function App()
             description="A desktop application that helps manage gym operations."
             image="/projects/gg.png"
             modalImage="/projects/ggtwo.png"
+            details="GG-Fitness is a desktop application designed to help manage gym members, trainers, and daily operations."
+            build="Java, MySQL"
           />
 
           <ProjectCard
@@ -43,14 +45,11 @@ function App()
             description="This website!"
             image="A.png"
             modalImage=""
+            details="."
+            build=''
           />
 
-          <ProjectCard
-            title="Text-Based RPG! "
-            description="Text-Based RPG, written in 68k assembly"
-            image="A.png"
-            modalImage=""
-          />
+  
 
 
         </div>

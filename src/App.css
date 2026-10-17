@@ -164,12 +164,24 @@ h1
   border-radius: 8px;
 }
 
+.modal-about
+{
+  border-bottom: rgb(3, 3, 3)id #d43b3b;
+}
+
 .modal-details
 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 32px;
   padding: 24px 32px;
+  border-bottom: 1px solid #555;
+}
+
+.modal-technologies
+{
+  border-left: 1px solid #555;
+  padding-left: 24px;
 }
 
 
