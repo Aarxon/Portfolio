@@ -59,9 +59,35 @@ function App()
         </div>
         </section>
 
-        <section id = "contact"> 
-        <h2>Contact me</h2>
-        </section>
+      <section id="contact">
+          <h2>Contact me</h2>
+      <div className="contact-grid">
+          <div className="contact-left">
+          <h2>Let's work together.</h2>
+          <p>
+            I'm always open to discussing new opportunities,
+            interesting projects, and collaborations.
+         </p>
+      </div>
+
+        <div className="contact-right">
+          <div className="contact-item">
+            <h3>Email</h3>
+              <a href="mailto:aarontierney11@gmail.com">
+                 aarontierney11@gmail.com↗
+              </a>
+            <h3>GitHub</h3>
+              <a href="https://github.com/Aarxon">
+                 Aarxon↗
+              </a>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/aaron-tierneydev/n">
+                 Aaron Tierney↗
+              </a>
+          </div>
+        </div>
+        </div>
+      </section>
 
           
       </main>
