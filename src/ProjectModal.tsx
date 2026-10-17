@@ -30,12 +30,12 @@ function ProjectModal({ title, details, modalImage, description, build, onClose 
             <div className="modal-about">
             <h3>About this project</h3>
             <p>{details}</p>
-       
+        
+       </div>
 
         <div className="modal-technologies">
             <h3>Built with</h3>
             <p>{build}</p>
-        </div>
         </div>
     </div>
 
