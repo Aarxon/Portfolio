@@ -1,11 +1,24 @@
 import './App.css'
 
-function App() {
+function App() 
+{
   return (
-    <main>
-      <h1>Aaron Tierney</h1>
-      <p>Software Developer</p>
-    </main>
+    
+    <>
+      <header>
+        <nav>
+          <div className="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        
+      </main>
+    </>
   )
 }
 
