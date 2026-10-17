@@ -35,6 +35,8 @@ function App()
             title="GG-Fitness"
             description="A desktop application that helps manage gym operations."
             image="/projects/gg.png"
+            github="https://github.com/Aarxon/GG-Fitness"
+            screencast=""
           />
 
         </div>
