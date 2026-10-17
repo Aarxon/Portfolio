@@ -7,12 +7,14 @@ type ProjectCardProps =
   title: string
   description: string
   details: string
-  build: string
   image: string
   modalImage: string
+  build: string
+  github: string
+  screencast: string
 }
 
-function ProjectCard({ title, description, details, image, build, modalImage }: ProjectCardProps)
+function ProjectCard({ title, description, details, image, build, github, screencast, modalImage }: ProjectCardProps)
 {
   const [isOpen, setIsOpen] = useState(false)
   
@@ -39,6 +41,8 @@ function ProjectCard({ title, description, details, image, build, modalImage }: 
   modalImage={modalImage}
   details={details}
   build={build}
+  github={github}
+  screencast={screencast}
   onClose={() => setIsOpen(false)}
   />
 )}

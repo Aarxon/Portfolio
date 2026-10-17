@@ -38,6 +38,8 @@ function App()
             modalImage="/projects/ggtwo.png"
             details="GG-Fitness is a desktop application designed to help manage gym members, trainers, and daily operations."
             build="Java, MySQL"
+            github="https://github.com/Aarxon/GG-Fitness"
+            screencast=""
           />
 
           <ProjectCard
@@ -47,6 +49,8 @@ function App()
             modalImage=""
             details="."
             build=''
+            github=""
+            screencast=""
           />
 
   

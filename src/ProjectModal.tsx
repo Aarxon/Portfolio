@@ -5,10 +5,12 @@ type ProjectModalProps =
   modalImage: string
   details: string
   build: string
+  github: string
+  screencast: string
   onClose: () => void
 }
 
-function ProjectModal({ title, details, modalImage, description, build, onClose }: ProjectModalProps)
+function ProjectModal({ title, details, modalImage, description, build, github, screencast, onClose }: ProjectModalProps)
 {
   return (
     
@@ -36,6 +38,16 @@ function ProjectModal({ title, details, modalImage, description, build, onClose 
         <div className="modal-technologies">
             <h3>Built with</h3>
             <p>{build}</p>
+        </div>
+
+        <div className="modal-links">
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a href={screencast} target="_blank" rel="noopener noreferrer">
+            Screencast
+            </a>
+
         </div>
     </div>
 
