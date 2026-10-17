@@ -35,9 +35,23 @@ function App()
             title="GG-Fitness"
             description="A desktop application that helps manage gym operations."
             image="/projects/gg.png"
-            github="https://github.com/Aarxon/GG-Fitness"
-            screencast=""
+            modalImage="/projects/ggtwo.png"
           />
+
+          <ProjectCard
+            title="Website"
+            description="This website!"
+            image="A.png"
+            modalImage=""
+          />
+
+          <ProjectCard
+            title="Text-Based RPG! "
+            description="Text-Based RPG, written in 68k assembly"
+            image="A.png"
+            modalImage=""
+          />
+
 
         </div>
         </section>

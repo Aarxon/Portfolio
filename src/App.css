@@ -26,7 +26,6 @@ nav a
   text-decoration: none;
 }
 
-
 .nav-links 
 {
   display: flex;
@@ -49,7 +48,7 @@ h1
   border-bottom: 1px solid #333;
 }
 
-#projects h2
+#projects > h2
 {
   margin-top: 20px;
   border-bottom: 1px solid #333;
@@ -61,7 +60,6 @@ h1
   margin-top: 10px;
   border-bottom: 1px solid #333;
 }
-
 
 /* Project Card Styling */
 
@@ -104,7 +102,7 @@ h1
   color: #a3a3a3;
 }
 
-/* Project card click styling */
+/* Project modal styling */
 
 .project-toggle
 {
@@ -119,39 +117,63 @@ h1
   cursor: pointer;
 }
 
-.project-toggle img
+.modal-overlay
 {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  display: block;
-}
-
-.project-info span
-{
-  color: #a3a3a3;
-}
-
-.project-links
-{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: space-between;
-  padding: 16px 20px;
-  border-top: 1px solid #333;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.project-links a
+.modal-content
 {
-  color: #f5f5f5;
-  text-decoration: none;
+  background-color: #302f2f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 90%;
+  height: 1000px;
+  max-width: 1050px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
-.project-links a:hover
+.modal-header
 {
-  color: #a3a3a3;
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-/* Project card click styling*/
+.modal-header button
+{
+  position: absolute;
+  right: 12px;
+}
+
+.modal-content img
+{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.modal-details
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  padding: 24px 32px;
+}
+
+
+/* Project modal styling*/
 
 /* Project Card Styling */
 

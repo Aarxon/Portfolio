@@ -1,14 +1,15 @@
 import { useState } from 'react'
+import ProjectModal from './ProjectModal'
+
 
 type ProjectCardProps = {
   title: string
   description: string
   image: string
-  github: string
-  screencast: string
+  modalImage: string
 }
 
-function ProjectCard({ title, description, image, github, screencast }: ProjectCardProps) 
+function ProjectCard({ title, description, image, modalImage}: ProjectCardProps) 
 {
   const [isOpen, setIsOpen] = useState(false)
   
@@ -17,7 +18,7 @@ function ProjectCard({ title, description, image, github, screencast }: ProjectC
   <button
     type="button"
     className="project-toggle"
-    onClick={() => setIsOpen(!isOpen)}
+    onClick={() => setIsOpen(true)}
     aria-expanded={isOpen}
   >
     <img src={image} alt={title} />
@@ -29,15 +30,15 @@ function ProjectCard({ title, description, image, github, screencast }: ProjectC
   </button>
 
   {isOpen && (
-    <div className="project-links">
-      <a href={github} target="_blank" rel="noopener noreferrer">
-        GitHub ↗
-      </a>
-      <a href={screencast} target="_blank" rel="noopener noreferrer">
-        Screencast ↗
-      </a>
-    </div>
-  )}
+  <ProjectModal
+    title={title}
+    description={description}
+    image={image}
+    modalImage={modalImage}
+    onClose={() => setIsOpen(false)}
+  />
+)}
+
 </article>
     
   )
