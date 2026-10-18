@@ -105,7 +105,7 @@ function App()
             title="Website"
             description="This website!"
             image="A.png"
-            modalImage=""
+            modalImage="/projects/A2.png"
             details="For you to see!"
             build="React, TypeScript, CSS, HTML"
             github="https://github.com/Aarxon/Portfolio"
@@ -115,7 +115,7 @@ function App()
             title="Assembly 68k Text-Based RPG"
             description="A text-based role-playing game developed using Motorola 68000 assembly language"
             image="/projects/68k.png"
-            modalImage=""
+            modalImage="/projects/68k.png"
             details="A text-based RPG built using Motorola 68000 assembly language. This project explores low-level programming concepts, including registers, memory management, conditional branching, and program control flow. It provided hands-on experience working with assembly language and understanding how software operates closer to the hardware."
             build="Assembly 68k"
             github="https://github.com/Aarxon/Assembly_and_C/tree/main/PROJECT_1"
@@ -160,6 +160,11 @@ function App()
 
           
       </main>
+
+      <footer className="site-footer">
+        <p>© 2026 Aaron Tierney. All rights reserved.</p>
+        <p>Built with React & TypeScript</p>
+      </footer>
     </>
   )
 }

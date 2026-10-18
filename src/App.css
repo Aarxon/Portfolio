@@ -1,6 +1,6 @@
 main 
 {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 100px 32px;
 }
@@ -446,6 +446,27 @@ h1
 /* Project modal styling*/
 
 /* Project Card Styling */
+
+
+/* Footer */
+
+.site-footer
+{
+  border-top: 1px solid #333;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer p
+{
+  margin: 0;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+/* Fotter */
 
 
 /* Mobile Styling */
