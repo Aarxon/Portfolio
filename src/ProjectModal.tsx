@@ -6,11 +6,10 @@ type ProjectModalProps =
   details: string
   build: string
   github: string
-  screencast: string
   onClose: () => void
 }
 
-function ProjectModal({ title, details, modalImage, description, build, github, screencast, onClose }: ProjectModalProps)
+function ProjectModal({ title, details, modalImage, description, build, github, onClose }: ProjectModalProps)
 {
   return (
     
@@ -43,9 +42,6 @@ function ProjectModal({ title, details, modalImage, description, build, github, 
         <div className="modal-links">
             <a href={github} target="_blank" rel="noopener noreferrer">
               GitHub
-            </a>
-            <a href={screencast} target="_blank" rel="noopener noreferrer">
-            Screencast
             </a>
 
         </div>

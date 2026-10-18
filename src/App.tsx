@@ -113,6 +113,18 @@ function App()
             screencast=""
           />
 
+          <ProjectCard
+            title="Assembly 68k Text-Based RPG"
+            description="This website!"
+            image="68k.png"
+            modalImage=""
+            details="For you to see!"
+            build="Assembly 68k"
+            github="https://github.com/Aarxon/Assembly_and_C/tree/main/PROJECT_1"
+            screencast=""
+          />
+
+
   
 
 
