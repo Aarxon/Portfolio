@@ -99,7 +99,6 @@ function App()
             details="GG-Fitness is a desktop application designed to help manage gym members, trainers, and daily operations."
             build="Java, MySQL"
             github="https://github.com/Aarxon/GG-Fitness"
-            screencast=""
           />
 
           <ProjectCard
@@ -110,7 +109,6 @@ function App()
             details="For you to see!"
             build="React, TypeScript, CSS, HTML"
             github="https://github.com/Aarxon/Portfolio"
-            screencast=""
           />
 
           <ProjectCard
@@ -121,7 +119,6 @@ function App()
             details="For you to see!"
             build="Assembly 68k"
             github="https://github.com/Aarxon/Assembly_and_C/tree/main/PROJECT_1"
-            screencast=""
           />
 
 
