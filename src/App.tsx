@@ -107,9 +107,9 @@ function App()
             description="This website!"
             image="A.png"
             modalImage=""
-            details="."
-            build=''
-            github=""
+            details="For you to see!"
+            build="React, TypeScript, CSS, HTML"
+            github="https://github.com/Aarxon/Portfolio"
             screencast=""
           />
 
