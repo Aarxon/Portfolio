@@ -113,10 +113,10 @@ function App()
 
           <ProjectCard
             title="Assembly 68k Text-Based RPG"
-            description="This website!"
-            image="68k.png"
+            description="A text-based role-playing game developed using Motorola 68000 assembly language"
+            image="/projects/68k.png"
             modalImage=""
-            details="For you to see!"
+            details="A text-based RPG built using Motorola 68000 assembly language. This project explores low-level programming concepts, including registers, memory management, conditional branching, and program control flow. It provided hands-on experience working with assembly language and understanding how software operates closer to the hardware."
             build="Assembly 68k"
             github="https://github.com/Aarxon/Assembly_and_C/tree/main/PROJECT_1"
           />
